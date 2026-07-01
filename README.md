@@ -1,21 +1,7 @@
-# 🎨 CapStudio — Free Local AI Caption Studio
-
-Welcome to **CapStudio**! CapStudio is a professional, **100% offline, free, local-first proprietary AI caption editor** for video creators. Built with Flutter, Riverpod, and Isar DB, it empowers creators to generate high-fidelity, word-level animated captions, mix immersive sound effects, and burn in gorgeous subtitle templates without subscription fees, external servers, or data ever leaving the host device.
+# Free Local AI Caption Studi
 
 > [!IMPORTANT]
 > **License & Source Code:** CapStudio is a **proprietary, closed-source personal project**. The codebase is privately owned, but leverages and acknowledges open-source packages, fonts, and tools (detailed in the Credits section below) to deliver its features.
-
----
-
-## 🚀 Key Architectural Advantages
-
-* **Local-First speech-to-text**: Orchestrates local process executions of `whisper.cpp` and `FFmpeg` to transcribe video audio directly on your device.
-* **Intelligent Auto-Save**: Features a silent, debounced 3-second auto-save pipeline using transactional Isar DB records.
-* **Resilient Asset Mirroring**: Implements dynamic download failovers inside `PackDownloadService`. If primary asset paths go offline, the client cycles through organizational backup mirrors.
-* **Zero CDN Dependency**: All 48 designer and Noto multi-language fonts are fully bundled inside the binary asset package to ensure complete offline independence.
-* **Windows VC++ Guarding**: Low-level runtime checks query system DLL folders (`System32`/`SysWOW64`) on Windows to warn creators and link to official Microsoft Visual C++ redistributables if missing.
-* **Dynamic Wave Synthesis**: Synthesizes all 44 classic editor sound effects dynamically on boot (or loads them from local assets), bypassing external download needs.
-* **Client-Side WebAssembly**: Fully supports Web Browser builds running client-side WASM for transcription (`transformers.js` / `whisper.wasm`) and video rendering (`ffmpeg.wasm`) entirely sandboxed within the browser.
 
 ---
 
@@ -216,7 +202,7 @@ Execute the unit and widget test runner:
 ```bash
 flutter test
 ```
-*Expected Output:* `All tests passed!` (317 tests passed, 0 failures)
+*Expected Output:* `All tests passed!` (345 tests passed, 0 failures)
 
 ---
 
